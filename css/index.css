@@ -1,0 +1,170 @@
+.blog .inicio-post {
+    position: absolute;
+    top: 4em;
+    height: 8em;
+    left: 30%;
+    right: 4em;
+    background-color: #f2fffc;
+    color: #000;
+    padding: 1.5em;
+    border-radius: 1em;
+}
+.blog .mais-recente {
+    background-color: #f2fffc;
+}
+.blog .mais-recente a {
+    color: #f26;
+}
+.blog li {
+    width: 30%;
+}
+
+header {
+    position: relative;
+}
+
+.palavra-home {
+    position: absolute;
+    color: #d5447e;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+}
+
+.eficiencia {
+    top: 20%;
+    left: 75%;
+}
+.boas-praticas {
+    top: 30%;
+    left: 15%;
+}
+.codigo-limpo {
+    top: 10%;
+    left: 20%;
+}
+.css3 {
+    top: 12%;
+    left: 85%;
+}
+.html5 {
+    top: 35%;
+    left: 70%;
+}
+.javascript {
+    top: 20%;
+    left: 30%;
+}
+.acessibilidade {
+    top: 50%;
+    left: 15%;
+}
+.responsivo {
+    left: 75%;
+    top: 50%;
+}
+.otimizacoes {
+    top: 20%;
+    left: 10%;
+}
+.agilidade {
+    top: 10%;
+    left: 65%;
+}
+.design {
+    top: 35%;
+    left: 30%;
+}
+
+
+.foto-home {
+    height: 200px;
+}
+.saudacao p {
+    font-size: 1.5em;
+    color: #99A;
+    line-height: 1;
+    padding: 2em;
+}
+.saudacao-inicio {
+    color: #889;
+    font-size: 3em;
+}
+.saudacao-ultima-linha {
+    text-align: right;
+    display: block;
+}
+.saudacao strong {
+    color: #000;
+    font-size: 2em;
+}
+.saudacao em {
+    color: #851944;
+    font-size: 4em;
+}
+.botao-index {
+    font-size: 1.25em;
+    background-color: #851944;
+    color: #FFF;
+    padding: .5em;
+    border: .2em solid black;
+    width: 40ch;
+    margin: 2em auto;
+    display: block;
+    text-align: center;
+}
+.secao-inicio {
+    padding: 2em;
+}
+.secao-inicio h2 {
+    text-transform: uppercase;
+    font-size: 3em;
+    margin-bottom: .5em;
+    text-shadow: 2px 2px #000;
+}
+.trabalhos {
+    background-color: #3C1D3D;
+    border-top: .5em solid #000;
+    border-bottom: .5em solid #000;
+}
+.trabalhos h2 {
+    color: #FFF;
+}
+.trabalhos ul {
+    overflow: hidden;
+    border: .5em solid black;
+}
+.trabalhos li {
+    float: left;
+    width: 33.333%;
+}
+.trabalhos img {
+    width: 100%;
+    display: block;
+}
+.blog {
+    position: relative;
+    background-color: #999;
+    color: #FFF;
+    border-bottom: .5em solid #851944;
+}
+.blog li a {
+    color: #FCF;
+    padding: .5em;
+    display: block;
+}
+footer {
+    background-color: #000;
+    color: #FFF;
+    padding: 2em;
+}
+footer h2 {
+    font-size: 3em;
+}
+footer a {
+    color: #F99;
+}
+main {
+    width: 100%;
+    padding-bottom: 0;
+    float: none;
+}
