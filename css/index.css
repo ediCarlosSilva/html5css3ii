@@ -1,3 +1,53 @@
+html,
+body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    perspective: 6px;
+    perspective-origin: 50% 160px;
+}
+
+.palavras-home,
+.titulo-principal {
+    transform-style: preserve-3d;
+}
+
+.palavras-home {
+    /* perspective: 6px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.palavras-home li {
+    font-size: 400%;
+}
+
+.banner-twitter {
+    width: 14em;
+    line-height: 1;
+    padding: 1em 0;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3c1d3d;
+    color: white;
+    boder: .25em solid black;
+    font-size: 1.2em;
+    font-family: "Open Sans Condensed", sans-serif;
+    /* posicionamento */
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: 0 0;
+    /* transform: translate(6.5754em, -2.4759em) rotate(45deg); */
+    transform: translate(6.5754em, -2.4759em) rotate(45deg);
+}
+
 .blog .inicio-post {
     position: absolute;
     top: 4em;
@@ -28,70 +78,104 @@ header {
 
 .palavra-home {
     position: absolute;
-    color: #d5447e;
+    /* color: #d5447e; */
+    color: rgba(255, 127, 127, 0.5);
     font-family: "Shadows Into Light", cursive;
     font-weight: bold;
 }
 
 .eficiencia {
-    top: 20%;
-    left: 75%;
+    top: 50%;
+    left: 60%;
+    -webkit-transform: translate(-50%, -50%) rotate(-5deg) translateZ(4px) scale(.25);
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(4px) scale(.25);
 }
 
 .boas-praticas {
-    top: 30%;
-    left: 15%;
+    top: 70%;
+    left: 20%;
+    -webkit-transform: translate(-50%, -50%) rotate(10deg) translateZ(1px) scale(.25);
+    transform: translate(-50%, -50%) rotate(10deg) translateZ(1px) scale(.25);
+    opacity: .5;
 }
 
 .codigo-limpo {
-    top: 10%;
-    left: 20%;
+    top: 45%;
+    left: 25%;
+    -webkit-transform: translate(-50%, -50%) rotate(-10deg) translateZ(2px) scale(.25);
+    transform: translate(-50%, -50%) rotate(-10deg) translateZ(2px) scale(.25);
+    opacity: .8;
 }
 
 .css3 {
-    top: 12%;
-    left: 85%;
+    top: 55%;
+    left: 35%;
+    -webkit-transform: translate(-50%, -50%) rotate(5deg) translate(2px) scale(.25);
+    transform: translate(-50%, -50%) rotate(5deg) translate(2px) scale(.25);
+    opacity: .7;
 }
 
 .html5 {
-    top: 35%;
-    left: 70%;
+    top: 30%;
+    left: 65%;
+    -webkit-transform: translate(-50%, -50%) rotate(10deg) translateZ(2px) scale(.25);
+    transform: translate(-50%, -50%) rotate(10deg) translateZ(2px) scale(.25);
 }
 
 .javascript {
-    top: 20%;
-    left: 30%;
+    top: 15%;
+    left: 60%;
+    -webkit-transform: translate(-50%, -50%) rotate(-5deg) translateZ(1px) scale(.25);
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(1px) scale(.25);
+    opacity: .3;
 }
 
 .acessibilidade {
-    top: 50%;
-    left: 15%;
+    top: 30%;
+    left: 35%;
+    -webkit-transform: translate(-50%, -50%) rotate(-5deg) translateZ(3px) scale(.25);
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(3px) scale(.25);
+    opacity: .8;
 }
 
 .responsivo {
-    left: 75%;
-    top: 50%;
+    left: 40%;
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%) rotate(10deg) translateZ(3px) scale(.25);
+    transform: translate(-50%, -50%) rotate(10deg) translateZ(3px) scale(.25);
+    opacity: .9;
 }
 
 .otimizacoes {
-    top: 20%;
-    left: 10%;
+    top: 70%;
+    left: 65%;
+    -webkit-transform: translate(-50%, -50%) rotate(5deg) translateZ(2px) scale(.25);
+    transform: translate(-50%, -50%) rotate(5deg) translateZ(2px) scale(.25);
+    opacity: .8;
 }
 
 .agilidade {
-    top: 10%;
-    left: 65%;
+    top: 75%;
+    left: 35%;
+    -webkit-transform: translate(-50%, -50%) rotate(5deg) translateZ(1px) scale(.25);
+    transform: translate(-50%, -50%) rotate(5deg) translateZ(1px) scale(.25);
+    opacity: .7;
 }
 
 .design {
-    top: 35%;
-    left: 30%;
+    top: 40%;
+    left: 60%;
+    -webkit-transform: translate(-50%, -50%) rotate(10deg) translateZ(2px) scale(.25);
+    transform: translate(-50%, -50%) rotate(10deg) translateZ(2px) scale(.25);
+    opacity: .8;
 }
 
 .foto-home {
     height: 200px;
+    border-radius: 50%;
     /* border-radius: 0 50%; */
-    border-radius: 10% 50% / 50% 10%;
+    /* border-radius: 10% 50% / 50% 10%; */
+    box-shadow: 0 0 1em #000;
 }
 
 .saudacao p {
@@ -119,6 +203,9 @@ header {
 .saudacao em {
     color: #851944;
     font-size: 4em;
+    display: inline-block;
+    transform: rotate(-5deg) skew(-10deg);
+    /* transform: skew(-10deg) rotate(-5deg); */
 }
 
 .botao-index {
@@ -131,6 +218,7 @@ header {
     margin: 2em auto;
     display: block;
     text-align: center;
+    box-shadow: 0 0 1em #000, inset 0 0 .5em #fff;
 }
 
 .secao-inicio {
@@ -141,13 +229,16 @@ header {
     text-transform: uppercase;
     font-size: 3em;
     margin-bottom: .5em;
-    text-shadow: 2px 2px #000;
+    text-shadow: 5px 5px 5px #000;
 }
 
 .trabalhos {
     background-color: #3C1D3D;
     border-top: .5em solid #000;
     border-bottom: .5em solid #000;
+    background-image: linear-gradient(135deg, transparent, transparent 14px, rgba(0, 0, 0, 0.1) 14px, rgba(0, 0, 0, 0.1) 15px, transparent 15px, transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
 }
 
 .trabalhos h2 {
@@ -174,6 +265,9 @@ header {
     background-color: #999;
     color: #FFF;
     border-bottom: .5em solid #851944;
+    background-image: linear-gradient(45deg, transparent, transparent 14px, rgba(255, 255, 255, 0.1) 14px, rgba(255, 255, 255, 0.1) 15px, transparent 15px, transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
 }
 
 .blog li a {
