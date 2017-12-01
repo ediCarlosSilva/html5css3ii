@@ -1,3 +1,38 @@
+.icones-redes-sociais a:hover::before,
+.icones-redes-sociais a:focus::before {
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-.2em) translateY(.5em) rotate(45deg);
+}
+
+.icones-redes-sociais a:hover::after,
+.icones-redes-sociais a:focus::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-indent: 0;
+    width: 300%;
+    font-size: .75em;
+    background: black;
+}
+
+.icones-redes-sociais a {
+    position: relative;
+}
+
+main a:hover,
+main a:focus,
+footer a:hover,
+footer a:focus {
+    color: red;
+}
+
 body {
     font-family: "Crimson Text", "Times New Roman", serif;
     background-color: #F2FFFC;
@@ -50,6 +85,11 @@ main p {
     color: inherit;
     font-family: "Open Sans Condensed", "Arial", sans-serif;
     text-transform: lowercase;
+}
+
+.navegacao-site a:hover,
+.navegacao-site a:focus {
+    text-shadow: 0px 0px 2px pink;
 }
 
 .navegacao-site h1 {
@@ -114,7 +154,7 @@ em {
 }
 
 main {
-    width: 80%;
+    width: calc(100% - 0.9 * 300px);
     float: left;
     padding-bottom: 80px;
 }
@@ -127,7 +167,7 @@ main {
 }
 
 .navegacao-site {
-    width: 20%;
+    width: calc(0.9 * 300px);
     float: right;
     position: relative;
     top: 300px;

@@ -50,7 +50,7 @@ body {
 
 .blog .inicio-post {
     position: absolute;
-    top: 4em;
+    top: 6em;
     height: 8em;
     left: 30%;
     right: 4em;
@@ -60,13 +60,30 @@ body {
     border-radius: 1em;
 }
 
-.blog .mais-recente {
+.blog .inicio-post {
+    display: none;
+}
+
+.blog a:hover+.inicio-post,
+.blog a:focus+.inicio-post {
+    display: block;
+}
+
+.blog a:hover,
+.blog a:focus {
+    background-color: #f2fffc;
+    color: #f26;
+}
+
+
+/* 
+.blog li:hover {
     background-color: #f2fffc;
 }
 
-.blog .mais-recente a {
+.blog li:hover a {
     color: #f26;
-}
+} */
 
 .blog li {
     width: 30%;
