@@ -1,3 +1,36 @@
+.saudacao em {
+    position: relative;
+    -webkit-animation: flutua 1s infinite;
+    animation: flutua 1s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+
+.saudacao:hover em {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@-webkit-keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
+}
+
+@keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
+}
+
 html,
 body {
     overflow-x: hidden;
@@ -46,6 +79,9 @@ body {
     transform-origin: 0 0;
     /* transform: translate(6.5754em, -2.4759em) rotate(45deg); */
     transform: translate(6.5754em, -2.4759em) rotate(45deg);
+    animation: aparece .5s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
 }
 
 .blog .inicio-post {
@@ -99,6 +135,15 @@ header {
     color: rgba(255, 127, 127, 0.5);
     font-family: "Shadows Into Light", cursive;
     font-weight: bold;
+    animation: aparece 2s;
+}
+
+@keyframes aparece {
+    /* pode-se usar a palavra-chave "from" também no lugar de 0% */
+    0% {
+        opacity: 0;
+        transform: scale(0.001);
+    }
 }
 
 .eficiencia {
@@ -236,6 +281,15 @@ header {
     display: block;
     text-align: center;
     box-shadow: 0 0 1em #000, inset 0 0 .5em #fff;
+    transition: box-shadow .5s;
+    text-decoration: none;
+}
+
+.botao-index:hover,
+.botao-index:focus {
+    box-shadow: 0 0 1em #fa9;
+    color: white;
+    background-color: #C54974;
 }
 
 .secao-inicio {

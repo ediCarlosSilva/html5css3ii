@@ -1,5 +1,32 @@
-label[for="nome"] {
+.com-icone {
     position: relative;
+}
+
+.com-icone::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-size: 50% 50%;
+    background-position: center;
+    width: 2em;
+    height: 2em;
+    background-color: #666;
+    background-repeat: no-repeat;
+}
+
+.com-icone+input {
+    width: calc(100% -2em);
+    position: relative;
+    left: 2em;
+}
+
+label[for="nome"]::after {
+    background-image: url(../imagens/usuario.png);
+}
+
+label[for="email"]::after {
+    background-image: url(../imagens/email.png);
 }
 
 legend,

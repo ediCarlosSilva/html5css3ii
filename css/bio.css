@@ -26,6 +26,8 @@
     margin: 1em 2em;
     width: 30ch;
     box-sizing: border-box;
+    transition: box-shadow 1s, transform 1s;
+    transition-delay: 1s, 0;
 }
 
 
@@ -42,6 +44,7 @@
 .citacao-bio:hover,
 .citacao-bio:focus {
     box-shadow: 0 0 0 99999px rgba(0, 0, 0, .8);
+    transition-delay: 0, 1s;
 }
 
 .citacao-bio:nth-of-type(odd):hover,
@@ -62,4 +65,38 @@
 .citacao-bio:nth-of-type(even) {
     float: left;
     margin-left: 0;
+}
+
+.habilidades th {
+    background-color: #851944;
+    color: white;
+    font-weight: bold;
+}
+
+.habilidades thead th {
+    background-color: #3C1D3D;
+}
+
+.habilidades td {
+    background-color: #eee;
+}
+
+.habilidades td,
+.habilidades th {
+    padding: 1em;
+}
+
+.habilidades {
+    margin: 1em 0;
+    border-collapse: separate;
+    border-spacing: .25em;
+}
+
+.habilidades [colspan] {
+    text-align: center;
+    font-style: italic;
+}
+
+.habilidades [rowspan] {
+    vertical-align: middle;
 }
